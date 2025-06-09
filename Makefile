@@ -9,3 +9,6 @@ help: ## Show this help message
 		awk 'BEGIN {FS = ":.*?## "}; \
 		     /^# Section:/ {gsub("^# Section: ", ""); print "\n\033[1;35m" $$0 "\033[0m"}; \
 		     /^[a-zA-Z_-]+:/ {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+publish: ## Publish the notebook to HTML 
+	jupyter nbconvert --to html notebooks/doc.ipynb --output-dir=docs --output=doc.html
