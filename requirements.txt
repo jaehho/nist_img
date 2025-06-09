@@ -1,8 +1,0 @@
-opencv-python
-numpy
-matplotlib
-ipywidgets
-tqdm
-boto3
-nbconvert
-pre-commit
