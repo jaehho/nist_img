@@ -3,3 +3,5 @@ numpy
 matplotlib
 ipywidgets
 boto3
+nbconvert
+pre-commit
